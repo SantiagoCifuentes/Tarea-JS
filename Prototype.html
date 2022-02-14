@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+ 
+</head>
+<body>
+    <script>
+        function tutor(nombre) 
+        {
+            this.nombre = nombre;
+            this.saludar = function()
+            {
+                console.log("Hola a todos soy "+this.nombre);
+            }
+        }
+
+        var santiago = new tutor("Santiago");
+
+        santiago.saludar();
+    </script>
+</body>
+</html>
+
+<!-- no lo entendí -->

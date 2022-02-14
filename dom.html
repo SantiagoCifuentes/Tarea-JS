@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <form id="form">
+        <input type="text" placeholder="Correo" name="mails[]">
+    </form>
+    <button id= "btn">Agregar más correos</button>
+    <script>
+       
+
+        $("#btn").addEventListener("click",function()
+        {
+            var input = document.createElement("input")
+            input.setAttribute("type","email");  //hace lo mismo que el input type solo que ya saldrá con el nombre " email"
+            input.setAttribute("placeholder","Correo");
+            input.setAttribute("name","email");
+            console.log(input)
+
+            $("#form").appendChild(input) //agarra un nodo y lo pone como hijo de  un elemento al final
+            my_alert("Se agregó un nuevo campo")
+        });
+        
+        function bind_close(){
+            var elements = document.querySelectorAll(".close")
+            for (let index = 0; index < elements.length; index++) {
+                const element = array[index];
+                
+            }
+        }
+
+        document.querySelectorAll(".close")
+            
+        function my_alert(msg)
+        {
+            
+            var div = document.createElement("div");
+            div.setAttribute("class","alert")
+            div.innerHTML = msg;
+            $("body").insertBefore(div,$("body").firstChild);//insertBefore, inserta el elemento antes del inicio del primer nodo
+
+        }
+
+        function $(selector)
+        {
+            return document.querySelector(selector)
+        }  
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+<script>
+        var curso =
+        {
+            titulo: "Curso js",
+            videos: 3,
+            tutor_value: "Hablalo",
+            get tutor()
+            {
+              return this.tutor_value;
+            },
+            set tutor(tutor)
+            {
+                if(tutor ==="" || (typeof tutor=== "undefined")){return;}
+                this.tutor_value = tutor;
+            }
+            
+        };
+       
+        curso.tutor = "";
+        console.log(curso.tutor)
+
+    </script>
+            
+
+</body>
+</html>
+
+    

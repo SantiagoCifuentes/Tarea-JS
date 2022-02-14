@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h2>Prueba counter</h2>
+
+        <button type="button" onclick="incrementa()">¡Incrementar!</button>
+        
+
+        <p id="demo">0</p>
+        <input type="text" id="variable">
+        <script>
+            const add = (function()
+            {
+                //let counter = 0;
+                return function ()
+                {
+                    //counter = 0
+                    return document.getElementById("variable").value
+                }
+            })();
+
+            function incrementa()
+            {
+                document.getElementById("demo").innerHTML = add();
+            }
+
+            function mostrar()
+            {
+                document.getElementById("demo").innerHTML=document.getElementById.innerHTML("variable").value;
+            }
+
+        </script>
+    </body>
+
+</html>
